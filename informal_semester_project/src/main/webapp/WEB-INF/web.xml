@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>testWeb</display-name>
+  
+  <servlet>
+  <servlet-name>AddRobotInfoServlet</servlet-name>
+    <servlet-class>webProject.servlet.AddRobotInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>SearchRobotInfoServlet</servlet-name>
+    <servlet-class>webProject.servlet.ShowRobotInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>DeleteRobotInfoServlet</servlet-name>
+    <servlet-class>webProject.servlet.DeleteRobotInfoServlet</servlet-class>
+  </servlet>
+  
+
+  <welcome-file-list>
+    <welcome-file>/login.jsp</welcome-file>
+  </welcome-file-list>
+  
+ <servlet-mapping>
+    <servlet-name>AddRobotInfoServlet</servlet-name>
+    <url-pattern>/addRobotInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchRobotInfoServlet</servlet-name>
+    <url-pattern>/searchRobotInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteRobotInfoServlet</servlet-name>
+    <url-pattern>/DeleteRobotInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>BasicInfoServlet</servlet-name>
+    <servlet-class>webProject.servlet.BasicInformation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BasicInfoServlet</servlet-name>
+    <url-pattern>/BasicInformation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>webProject.servlet.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>registServlet</servlet-name>
+    <servlet-class>webProject.servlet.UserRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registServlet</servlet-name>
+    <url-pattern>/regist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>updateServlet</servlet-name>
+    <servlet-class>webProject.servlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>current_listener</servlet-name>
+   <servlet-class>webProject.servlet.current_listener</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+   <servlet-name>current_listener</servlet-name>
+   <url-pattern>/listener</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ShowMazeInfoServlet</servlet-name>
+    <servlet-class>webProject.servlet.ShowMazeInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowMazeInfoServlet</servlet-name>
+    <url-pattern>/ShowMazeInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BackToHomePageServlet</servlet-name>
+    <servlet-class>webProject.servlet.BackToHomePage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BackToHomePageServlet</servlet-name>
+    <url-pattern>/BackToHomePage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BackToLoginPageServlet</servlet-name>
+    <servlet-class>webProject.servlet.BackToLoginPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BackToLoginPageServlet</servlet-name>
+    <url-pattern>/BackToLoginPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>webProject.servlet.ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/ImageServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>
